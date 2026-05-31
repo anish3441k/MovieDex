@@ -3,65 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MovieDex Master Premium</title>
+<title>MovieDex TMDB Starter</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="background-glow" id="backgroundGlow"></div>
-
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-header">
-    <h2 id="sidebarTitle">MovieDex</h2>
-    <button id="closeSidebar">✕</button>
-  </div>
-
-  <div class="sidebar-items">
-    <button class="side-btn" data-category="home">🏠 Home</button>
-    <button class="side-btn" data-category="movies">🎬 Movies</button>
-    <button class="side-btn" data-category="anime">🌌 Anime</button>
-    <button class="side-btn" data-category="animeMovies">🎥 Anime Movies</button>
-    <button class="side-btn" data-category="cartoons">🧸 Cartoons</button>
-    <button class="side-btn" data-category="cartoonMovies">🍿 Cartoon Movies</button>
-    <button class="side-btn" data-category="webseries">📺 Web Series</button>
-    <button class="side-btn" data-category="games">🎮 Games</button>
-
-    <div class="sidebar-line"></div>
-
-    <button class="side-btn">❤️ Wishlist</button>
-    <button class="side-btn">⚙️ Settings</button>
-  </div>
-</div>
-
 <header class="navbar">
-  <div class="left-nav">
-    <button class="menu-btn" id="menuBtn">☰</button>
-    <div class="logo" id="homeBtn">MovieDex</div>
-  </div>
+    <div class="logo">MovieDex</div>
 
-  <div class="search-box">
-    <input type="text" placeholder="Search MovieDex...">
-    <button id="searchBtn">Search</button>
-  </div>
-
-  <button class="login-btn">👤 Login / Signup</button>
+    <div class="search-box">
+        <input type="text" placeholder="Search movies...">
+        <button id="searchBtn">Search</button>
+    </div>
 </header>
 
-<section class="hero" id="hero">
-  <div class="overlay"></div>
-
-  <div class="hero-content glass fade-up">
-    <h1 id="heroTitle">Welcome To MovieDex</h1>
-    <p id="heroText">One cinematic entertainment universe.</p>
-    <button id="heroButton">Explore Now</button>
-  </div>
+<section class="hero">
+    <h1>MovieDex TMDB Integration</h1>
+    <p>Search real movies using TMDB API</p>
 </section>
 
-<section class="trending fade-up">
-  <h2 id="sectionTitle">🔥 Trending Entertainment</h2>
-  <div class="cards" id="cardsContainer"></div>
-</section>
+<div id="movieResults" class="movie-results"></div>
 
+<script src="js/config.js"></script>
+<script src="js/movieApi.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
