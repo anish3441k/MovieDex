@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieDex Movie Page</title>
+  <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h1>MovieDex</h1>
+    <ul>
+      <li>Home</li>
+      <li>Movies</li>
+      <li>Anime</li>
+      <li>Games</li>
+    </ul>
+  </aside>
+
+  <main class="movie-container">
+    <section class="hero">
+      <img id="poster" src="" alt="poster">
+      <div class="details">
+        <h1 id="title">Loading...</h1>
+        <p id="overview"></p>
+        <div class="buttons">
+          <button>▶ Trailer</button>
+          <button>+ Watchlist</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cast-section">
+      <h2>Top Cast</h2>
+      <div id="cast" class="cast-grid"></div>
+    </section>
+
+    <section class="similar-section">
+      <h2>Similar Movies</h2>
+      <div id="similar" class="similar-grid"></div>
+    </section>
+  </main>
+
+  <script src="movie.js"></script>
+</body>
+</html>

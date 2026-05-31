@@ -1,0 +1,83 @@
+body{
+  margin:0;
+  background:#050505;
+  color:white;
+  font-family:Arial;
+  display:flex;
+}
+
+.sidebar{
+  width:220px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  min-height:100vh;
+  padding:20px;
+}
+
+.sidebar h1{
+  color:#ff3b3b;
+}
+
+.sidebar ul{
+  list-style:none;
+  padding:0;
+}
+
+.sidebar li{
+  padding:15px;
+  margin:10px 0;
+  background:rgba(255,255,255,0.05);
+  border-radius:12px;
+}
+
+.movie-container{
+  flex:1;
+  padding:30px;
+}
+
+.hero{
+  display:flex;
+  gap:30px;
+  background:rgba(255,255,255,0.05);
+  border-radius:20px;
+  padding:30px;
+  backdrop-filter:blur(20px);
+}
+
+.hero img{
+  width:280px;
+  border-radius:20px;
+}
+
+.details h1{
+  font-size:50px;
+}
+
+.buttons button{
+  background:#ff3b3b;
+  border:none;
+  color:white;
+  padding:14px 24px;
+  border-radius:12px;
+  margin-right:10px;
+  cursor:pointer;
+}
+
+.cast-grid,.similar-grid{
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+  margin-top:20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:10px;
+  border-radius:15px;
+  min-width:150px;
+}
+
+.card img{
+  width:100%;
+  border-radius:12px;
+}
