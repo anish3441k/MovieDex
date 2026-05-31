@@ -1,3 +1,4 @@
+const TMDB_API_KEY = "6a782c30983b74d5e01dbab7cf128327";
 const sidebar=document.getElementById('sidebar');
 const menuBtn=document.getElementById('menuBtn');
 const closeSidebar=document.getElementById('closeSidebar');
